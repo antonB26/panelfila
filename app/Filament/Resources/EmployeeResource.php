@@ -53,8 +53,9 @@ class EmployeeResource extends Resource
                 Forms\Components\DatePicker::make('date_of_birth')
                     ->required(),
                 Forms\Components\DatePicker::make('date_hired')
-                    ->required(),
-            ]);
+                    ->required()
+                    ->columnSpanFull(),
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
