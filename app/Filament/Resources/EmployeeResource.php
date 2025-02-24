@@ -23,19 +23,7 @@ class EmployeeResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('country_id')
-                    ->required()
-                    ->numeric(),
-                Forms\Components\TextInput::make('state_id')
-                    ->required()
-                    ->numeric(),
-                Forms\Components\TextInput::make('city_id')
-                    ->required()
-                    ->numeric(),
-                Forms\Components\TextInput::make('department_id')
-                    ->required()
-                    ->numeric(),
-                Forms\Components\Section::make('User Name')
+            Forms\Components\Section::make('User Name')
                 ->description('Put the user name details in.')
                 ->schema([Forms\Components\TextInput::make('first_name')
                     ->required()
