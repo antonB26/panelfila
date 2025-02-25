@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class State extends Model
 {
+    use HasFactory;
+    
     protected $fillable = [
         'country_id',
         'name'];
